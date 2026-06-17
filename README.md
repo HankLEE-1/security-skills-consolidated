@@ -22,21 +22,25 @@
 | 14 | [恶意软件分析](14-malware-analysis/) | 静态/动态分析、YARA/Sigma规则 |
 | 15 | [代码审计](15-code-audit/) | 55+漏洞类型、五阶段方法论、Semgrep/CodeQL |
 
-## 详细子文件
-
-部分分类包含详细的专项文件：
+## 📂 详细子文件
 
 ### 03-漏洞利用技术
-- `sqli.md` - SQL注入10大场景、手动Payload、SQLMap命令
-- `xss.md` - XSS 17大场景、Payload、工具对比、CSP绕过
-- `lfi-rce.md` - 7大RCE方法、PHP伪协议、日志投毒
 
-## 使用说明
+| 文件 | 内容 |
+|------|------|
+| `SKILL.md` | PoC构造流程、反序列化利用、XXE注入 |
+| `sqli.md` | SQL注入10大测试场景、手动Payload示例、SQLMap命令速查、WAF绕过tamper脚本组合 |
+| `xss.md` | XSS 17大场景、常用Payload(基础/DOM/属性逃逸/事件处理器/编码绕过/框架特定)、CSP绕过15种技术 |
+| `lfi-rce.md` | 7大RCE方法(日志投毒/proc/environ/临时文件/图片马/数据库/SSH密钥/PHP Session)、PHP伪协议利用、目录遍历绕过 |
 
-每个文件夹包含完整的技能知识，可直接作为参考手册使用。
+### 其他分类
+
+每个分类文件夹均包含独立的 `SKILL.md` 文件，内含完整的技能知识、代码示例、工具命令和实战Payload。
+
+## 🎯 使用说明
 
 **学习路径建议：**
-1. 入门：01-recon → 02-vuln-discovery → 10-pentest-flow
-2. Web安全：03-exploitation → 04-waf-bypass → 06-web-security
-3. 进阶：05-post-exploitation → 07-reverse-engineering → 08-mobile-security
-4. 专项：09-ai-mcp-security → 13-supply-chain-api → 14-malware-analysis → 15-code-audit
+1. **入门**：01-recon → 02-vuln-discovery → 10-pentest-flow
+2. **Web安全**：03-exploitation → 04-waf-bypass → 06-web-security
+3. **进阶**：05-post-exploitation → 07-reverse-engineering → 08-mobile-security
+4. **专项**：09-ai-mcp-security → 13-supply-chain-api → 14-malware-analysis → 15-code-audit
